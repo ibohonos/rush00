@@ -14,10 +14,10 @@ if (isset($_POST['email'])) :
 	$email = $_POST['email'];
 endif;
 if (isset($_POST['pass'])) :
-	$pass = md5($_POST['pass']);
+	$pass = hash('whirlpool', $_POST['pass']);
 endif;
 if (isset($_POST['conf_pass'])) :
-	$conf_pass = md5($_POST['conf_pass']);
+	$conf_pass = hash('whirlpool', $_POST['conf_pass']);
 endif;
 if ($pass != $conf_pass) :
 	die("Passwords not match!");

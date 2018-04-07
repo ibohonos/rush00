@@ -8,7 +8,7 @@ if (isset($_POST['email'])) :
 	$email = $_POST['email'];
 endif;
 if (isset($_POST['pass'])) :
-	$pass = md5($_POST['pass']);
+	$pass = hash('whirlpool', $_POST['pass']);;
 endif;
 
 $sql = "SELECT * FROM users WHERE email='" . $email . "'";
