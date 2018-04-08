@@ -1,5 +1,13 @@
 <?php
-	include_once "config.php";
+	if (file_exists("config.php")) :
+		include_once "config.php";
+	else :
+		?>
+		<script>
+			window.location.href = 'install.php';
+		</script>
+		<?php
+	endif;
 	include_once "functions.php";
 ?>
 <!DOCTYPE html>
