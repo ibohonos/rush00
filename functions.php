@@ -50,7 +50,7 @@ function ft_upload_image($path, $img) {
 		echo "Sorry, file already exists.";
 		$uploadOk = 0;
 	endif;
-	if ($img["size"] > 5000000) :
+	if ($img["size"] > 100000) :
 		echo "Sorry, your file is too large.";
 		$uploadOk = 0;
 	endif;

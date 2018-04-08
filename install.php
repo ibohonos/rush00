@@ -13,21 +13,21 @@
 				<title>Install</title>
 			</head>
 			<body>
-				<div style="width: 1024px; margin: 0 auto;">
+				<div style="width: 1024px; margin: 80px auto 0; text-align: center;">
 					<form action="" method="POST">
-						<div>
+						<div style="margin: 10px 0;">
 							<label for="dbname">BD Name</label>
 							<input type="text" name="dbname" id="dbname">
 						</div>
-						<div>
+						<div style="margin: 10px 0;">
 							<label for="uname">User Name</label>
 							<input type="text" name="uname" id="uname">
 						</div>
-						<div>
+						<div style="margin: 10px 0;">
 							<label for="upass">User password</label>
 							<input type="text" name="upass" id="upass">
 						</div>
-						<div>
+						<div style="margin: 10px 0;">
 							<label for="host">Host</label>
 							<input type="text" name="host" id="host">
 						</div>

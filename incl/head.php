@@ -13,7 +13,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Shop</title>
+	<title>Just food</title>
+	<link rel="icon" href="/<?php echo __PRJ_URL__; ?>/img/icon.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="/<?php echo __PRJ_URL__; ?>/css/style.css">
 </head>
 <body>
+	<div id="all-content">
