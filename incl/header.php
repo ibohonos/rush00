@@ -1,38 +1,28 @@
 <?php include_once "head.php"; ?>
 <header>
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
+	<div id="headerInside" class="container">
+<!-- 		<div class="row"> -->
+			<div id="left-menu">
+				<a href="/<?php echo __PRJ_URL__; ?>">HOME</a>
+				<a href="/<?php echo __PRJ_URL__; ?>/products.php">PRODUCTS</a>
+			</div>
+			<div id="central-logo">
 				<a href="/<?php echo __PRJ_URL__; ?>">
-					<img src="/<?php echo __PRJ_URL__; ?>/img/logo.png" alt="logo" title="logo" class="logo">
+					<img id="logo" src="/<?php echo __PRJ_URL__; ?>/img/logo.png" alt="logo" title="logo">
 				</a>
 			</div>
-			<div class="col-7">
-				<ul class="menu">
-					<li>
-						<a href="/<?php echo __PRJ_URL__; ?>">Home</a>
-					</li>
-					<li>
-						<a href="/<?php echo __PRJ_URL__; ?>/products.php">Products</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-3">
-				<ul class="auth">
+			<div id="right-menu">
+				<div class="auth">
 					<?php if (!ft_is_loggined()) : ?>
-						<li>
-							<a href="/<?php echo __PRJ_URL__; ?>/auth.php">Sign in</a>
-						</li>
-						<li>
-							<a href="/<?php echo __PRJ_URL__; ?>/reg.php">Sign up</a>
-						</li>
+						<a href="/<?php echo __PRJ_URL__; ?>/auth.php">SIGN IN</a>
+						<a href="/<?php echo __PRJ_URL__; ?>/reg.php">SIGN UP</a>
+						<a href="/<?php echo __PRJ_URL__; ?>/cart.php">CART</a>
 					<?php else : ?>
-						<li>
-							<a href="/<?php echo __PRJ_URL__; ?>/profile.php">Profile</a>
-						</li>
+						<a href="/<?php echo __PRJ_URL__; ?>/profile.php">PROFILE</a>
+						<a href="/<?php echo __PRJ_URL__; ?>/cart.php">CART</a>
 					<?php endif; ?>
-				</ul>
+				</div>
 			</div>
-		</div>
+<!-- 		</div> -->
 	</div>
 </header>

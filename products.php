@@ -1,13 +1,14 @@
 <?php
 	include_once "incl/header.php";
-	include_once "db.php";
+	// include_once "db.php";
 
-	$products = ft_get_table_data($connect, 'products');
+	// $products = ft_get_table_data($connect, 'products');
 ?>
+<div id="body">
 	<main>
 		<div class="container">
 			<?php if (empty($_GET)) : ?>
-				<h1>Products</h1>
+				<h1 class="titles">Products</h1>
 				<div class="row">
 					<div class="col-3">
 						<p>Hello cats</p>
@@ -43,4 +44,5 @@
 			<?php endif; ?>
 		</div>
 	</main>
+</div>
 <?php include_once "incl/footer.php"; ?>

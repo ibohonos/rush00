@@ -2,7 +2,7 @@
 include_once "db.php";
 
 if (!isset($_POST) || empty($_POST) ) :
-	die("You are cheater!");
+	die("You are a cheater!");
 endif;
 if (isset($_POST['first_name'])) :
 	$first_name = $_POST['first_name'];
@@ -20,7 +20,7 @@ if (isset($_POST['conf_pass'])) :
 	$conf_pass = md5($_POST['conf_pass']);
 endif;
 if ($pass != $conf_pass) :
-	die("Passwords not match!");
+	die("Passwords don't match!");
 endif;
 
 $sql = "INSERT INTO users (first_name, last_name, email, pass) VALUES ('" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $pass . "')";
