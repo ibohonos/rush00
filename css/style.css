@@ -438,9 +438,9 @@ header {
 }
 
 #product-description p {
-	font-size: 1.2vw;
+	font-size: 1vw;
 	margin-top: -0.1vw;
-	line-height: 4vw;
+	line-height: 2vw;
 }
 
 #inside-open-product img {
@@ -631,3 +631,88 @@ header {
 }
 
 /*END OF STYLES FOR CONTACT*/
+
+/*START OF STYLES FOR PRODUCTS*/
+
+#products {
+	position: relative;
+	height: 50vw;
+}
+
+#content-products {
+	position: relative;
+	height: 100%;
+}
+
+#admin-access {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20vw;
+	height: 10vw;
+	margin-top: 3vw;
+	margin-left: 3vw;
+	padding: 2vw;
+	border-radius: 2vw;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+#admin-access a {
+	text-decoration: none;
+	font-size: 1.2vw;
+	display: inline-block;
+	margin-top: 1vw;
+	color: #6d5424;
+}
+
+#admin-access a:hover{
+	color: #b79042;
+}
+
+#products-list {
+	margin-left: 25vw;
+}
+
+
+.particular-product {
+	margin-top: 0.3vw;
+	background-color: rgba(255, 255, 255, 0.6);
+	display: inline-block;
+	width: 33%;
+	padding: 0.5vw;
+}
+
+.particular-product a{
+	float: left;
+	text-decoration: none;
+	color: #3f382d;
+	font-weight: bold;
+	padding: 1vw;
+	font-size: 1.3vw;
+}
+
+.particular-product p{
+	float: right;
+	color: #3f382d;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5vw; 
+	padding: 1vw;
+}
+
+.particular-product .img {
+	display: block;
+	text-align: center;
+}
+
+.particular-product img{
+	/*width: 100%;*/
+	height: 10vw;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*END OF STYLES FOR PRODUCTS*/

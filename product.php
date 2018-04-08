@@ -5,29 +5,30 @@ include_once "db.php";
 $product = ft_get_by_id($connect, 'products', $_GET['id']);
 ?>
 	<main>
-		<div class="container">
-			<h1>
+		<div id="open-product" class="container">
+			<h1 class="titles">
 				<?php if (!empty($product)) : ?>
 					<span><?php echo $product['name']; ?></span>
 				<?php else : ?>
 					<span>Product not found!</span>
 				<?php endif; ?>
 			</h1>
+			<div id="inside-open-product">
 			<?php if (!empty($product)) : ?>
-				<div class="row">
 					<?php if (!empty($product['image'])) : ?>
-						<div class="col-3">
-							<img src="<?php echo $product['image']; ?>">
-						</div>
-						<div class="col-9">
+							<img id="product-pic" src="<?php echo $product['image']; ?>">
 					<?php else : ?>
-						<div class="col-12">
 					<?php endif; ?>
+					<div id="product-description">
 						<p><?php echo nl2br($product['description']); ?></p>
 					</div>
+					<div id="button">
+						<button type="submit">ADD TO CART</button>
+					</div>
+					</div>
 				</div>
+			</div>
 			<?php endif; ?>
-		</div>
 	</main>
 <?php
 include_once "footer.php";
