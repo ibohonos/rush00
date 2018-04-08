@@ -5,33 +5,42 @@
 	$products = ft_get_table_data($connect, 'products');
 ?>
 	<main>
-		<div class="container">
+		<div id="products">
 			<?php if (empty($_GET)) : ?>
-				<h1>Products</h1>
-				<div class="row">
-					<div class="col-3">
-						<p>Hello cats</p>
+				<h1 class ="titles">Products</h1>
+				<div id="content-products">
+					<div id="admin-access">
 						<?php if (ft_is_admin()) : ?>
-							<a href="/<?php echo __PRJ_URL__; ?>/product_cat.php?add">Add category</a>
+							<a href="/<?php echo __PRJ_URL__; ?>/product_cat.php?add">Add category</a><br>
 						<?php endif; ?>
-					</div>
-					<div class="col-9">
 						<?php if (ft_is_admin()) : ?>
 							<a href="/<?php echo __PRJ_URL__; ?>/products.php?add">Create product</a>
 						<?php endif; ?>
+						<?php if (!ft_is_admin()) : ?>
+							<p>Take a look at all of our products</p>
+						<?php endif; ?>
+					</div>
+					<div id="products-list">
 						<?php if (!empty($products)) : ?>
-							<ul>
-								<?php foreach ($products as $product) : ?>
-									<li>
-										<a href="/<?php echo __PRJ_URL__; ?>/product.php?id=<?php echo $product['id'];?>">
-											<?php echo $product['name']; ?>
-										</a>
-										<?php if ($product['price'] > 0) : ?>
-											<p>$<?php echo $product['price']; ?></p>
-										<?php endif; ?>
-									</li>
-								<?php endforeach; ?>
-							</ul>
+							<?php $i = 0; foreach ($products as $product) : ?>
+								<div class="particular-product">
+									<?php if (!empty($product['image'])) : ?>
+										<div class="img">
+											<img src="<?php echo $product['image']; ?>">
+										</div>
+									<?php endif; ?>	
+									<a href="/<?php echo __PRJ_URL__; ?>/product.php?id=<?php echo $product['id'];?>">
+										<?php echo strtoupper($product['name']); ?>
+									</a>
+									<?php if ($product['price'] > 0) : ?>
+										<p>$<?php echo $product['price']; ?></p>
+									<?php endif; ?>
+								</div>
+								<?php $i++; ?>
+								<?php if ($i % 3 == 0) : ?>
+									<div class="clearfix"></div>
+								<?php endif; ?>
+							<?php endforeach; ?>
 						<?php else : ?>
 							<p>No products.</p>
 						<?php endif; ?>

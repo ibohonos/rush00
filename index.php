@@ -12,11 +12,10 @@
 					<div class="wrapper">
 						<button class="dropbtn">Categories</button>
 						<div class="content">
-							<a href="#">Category</a>
-							<a href="#">Category</a>
-							<a href="#">Category</a>
-							<a href="#">Category</a>
-							<a href="#">Category</a>
+							<a href="#">Desserts</a>
+							<a href="#">Salads</a>
+							<a href="#">Main dishes</a>
+							<a href="#">Soups</a>
 						</div>
 					</div>
 					<div class="wrapper">

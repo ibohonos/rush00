@@ -98,6 +98,17 @@
 			} else {
 				echo "Error: " . $sql . "<br>" . mysqli_error($connect);
 			}
+			$query = "INSERT INTO products (name, description, price, sku, qty, image) VALUES
+('Macaroons', 'Light, soft and crispy at the same time, our macaroons will bring you absolute joy!\r\nIngredients: sugar, almond flour, eggs, cream, natural coloring.', 2, 'mac12', 50, 'img/products/macaroon.png'),
+('Spaghetti Carbonara', 'Feeling extremely hungry? Our spaghetti Carbonara is the best choice for you. Homemade pasta with delicious sauce will help you defeat your hunger.\r\nIngredients: spaghetti(water, eggs, flour), bacon, garlic, Parmesan cheese, eggs.', 8, 'car45', 10, 'img/products/pasta.png'),
+('Vesuvio Pizza', 'Our best recommendation for a party or a family gathering. Our advice is to order two because one will be gone in no time \r\nIngredients: Olives, Corn, Sweet Bell Pepper, Broccoli, Fresh Mushrooms and Gherkins. Chicken.', 10, 'piz9', 20, 'img/products/pizza.png'),
+('Tiramisu', 'Tiramisu is an Italian word that means &ldquo;pick me up&rdquo; or &ldquo;lift me up&rdquo;. Tiramisu is delicious coffee flavored cheesecake or Italian dessert.\r\nIngredients: Heavy, Sugar, Water, Sponge Cake, Egg, Cream Cheese, Mascarpone Cheese, Stabilizer, Coffee, Modified Cornstarch, Cocoa, Pure Vanilla, Caramel (Color).', 5, '3451ghg', 50, 'img/products/tiramisu.png'),
+('Caprese', 'Fresh cherry tomatoes, delicious mozzarella, a bit of basil with original homemade pesto sauce &ndash; what can be better for your lunch?\r\nIngredients: cherry tomato, buffalo mozzarella, basil, pesto sauce.', 5, '', 18, 'img/products/caprese.png'),
+('Bruschetta', 'Discover a perfect Italian appetizer, which will tame your hunger a little bit and prepare you for some real food. Our bruschettas come on a homemade freshly baked bread and with three different toppings: chopped tomatoes, salmon, and pesto sauce.\r\nIngredients: homemade bread, cherry tomatoes, olive oil, salmon, pesto sauce.', 3, 'brus34', 70, 'img/products/bruchettas.png'),
+('Lasagna', 'The dish you fall in love with from the first bite and immediately come back for more!\r\nIngredients: flour, eggs, carrot, onion, celery, olive oil, tomatoes, ground beef, Bolognese sauce.', 15, 'las46', 9, 'img/products/lasagna.png'),
+('Minestrone', 'Feeling sad, clod, and lonely? Our minestrone soup will bring you back to life!\r\nIngredients: beans, onions, celery, carrots, stock, and tomatoes.', 3, 'min56', 7, 'img/products/minestrone.png'),
+('Risotto', 'Amazing combination of gorgeous taste and total simplicity. Popular choice for breakfast.\r\nIngredients: chicken stock, arborio rice, vermouth, shallot, butter, vegetable oil, Parmesan cheese, parsley, mushrooms.', 6, 'ris12', 16, 'img/products/risotto.png'),
+('Ravioli with spinach', 'The perfect combination of soft dough, fresh filling, and a creamy cheese.\r\nIngredients: water, wheat flour, spinach, ricotta cheese.', 6, 'rav76', 60, 'img/products/ravioli.jpg');"
 			?>
 				<script>
 					window.location.href = 'index.php';
