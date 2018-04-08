@@ -716,3 +716,100 @@ header {
 }
 
 /*END OF STYLES FOR PRODUCTS*/
+
+/*START OF STYLES FOR ADD-CAT*/
+
+#add-cat {
+	margin: 0 auto;
+	width: 20vw;
+	padding: 2vw;
+}
+
+#add-cat form div input{
+	float: right;
+	width: 70%;
+	height: 1.5vw;
+}
+
+#create-cat-button{
+	margin: 0 auto;
+	margin-top: 3vw;
+	width: 100%;
+	color: #fff;
+	background-color: #6d5424;
+	border: solid 0.1vw #6d5424;
+	border-radius: 2vw; 
+	font-size: 1vw;
+}
+
+#create-cat-button:hover{
+	background-color: #b79042;
+	color: #443921;
+	border: solid 0.1vw #b79042;
+}
+
+/*END OF STYLES FOR ADD-CAT*/
+
+/*START OF STYLES FOR ADD-PRODUCT*/
+
+#add-product {
+	margin: 0 auto;
+	width: 35vw;
+	padding: 2vw;
+}
+
+#add-product form div{
+	width: 100%;
+	height: 2vw;
+	margin-top: 0.6vw;
+}
+
+#add-product form div input, #add-product form div textarea{
+	float: right;
+	width: 60%;
+	height: 1.5vw;
+}
+
+#add-product-button{
+	margin: 0 auto;
+	margin-top: 2vw;
+	width: 100%;
+	color: #fff;
+	background-color: #6d5424;
+	border: solid 0.1vw #6d5424;
+	border-radius: 2vw; 
+	font-size: 1vw;
+}
+
+#add-product-button:hover{
+	background-color: #b79042;
+	color: #443921;
+	border: solid 0.1vw #b79042;
+}
+
+/*END OF STYLES FOR ADD-PRODUCT*/
+
+/*START OF STYLES FOR PROFILE*/
+
+#logout-button{
+	float: right;
+	margin-top: -4.5vw;
+	margin-right: 1vw;
+	width: 10vw;
+	height: 3vw;
+	color: #fff;
+	background-color: #6d5424;
+	border: solid 0.1vw #6d5424;
+	border-radius: 2vw; 
+	font-size: 2vw;
+	text-decoration: none;
+	text-align: center;
+}
+
+#logout-button:hover{
+	background-color: #b79042;
+	color: #443921;
+	border: solid 0.1vw #b79042;
+}
+
+/*END OF STYLES FOR PROFILE*/
